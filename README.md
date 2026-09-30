@@ -1,4 +1,4 @@
-<h1><img src="assets/logo.svg" width="104" align="left" hspace="12" alt="LDM is an AE: z_t -> DiT-D (decoding) -> x (image domain) -> DiT-E (encoding) -> z">LDM-is-AE: Latent Diffusion Model is an Intrinsic Auto-Encoder for End-to-End Image Generation (NIPS, 2026)</h1>
+<h1><img src="assets/logo.svg" width="104" align="left" hspace="12" alt="LDM is an AE: z_t -> DiT-D (decoding) -> x (image domain) -> DiT-E (encoding) -> z">LDM-is-AE: Latent Diffusion Model is an Auto-Encoder for End-to-End Image Generation (NeurIPS, 2026)</h1>
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Framework](https://img.shields.io/badge/Framework-PyTorch-ee4c2c.svg)](https://pytorch.org)
@@ -23,7 +23,7 @@ Latent diffusion is normally a two-stage pipeline: train a
 VAE, then train a diffusion model in its latent space -- and inherit the VAE's bias. **LDM-is-AE removes
 the pipeline.** We split the DiT backbone into **DiT-D** (the first 30 blocks) and **DiT-E** (the last 2 blocks) and
 supervise the intermediate feature `F` in the image domain at every timestep. The backbone's hidden
-`decode->encode` path then becomes an explicit **intrinsic auto-encoder**, trained end-to-end in a single
+`decode->encode` path then becomes an explicit **auto-encoder**, trained end-to-end in a single
 stage without external VAE.
 
 <p align="center"><img src="assets/fig1_framework.png" width="100%" alt="LDM-is-AE: the DiT backbone is split into DiT-E / DiT-D and the intermediate feature F is aligned with PixelUnshuffle(x) in the image domain at every timestep."></p>
@@ -31,7 +31,7 @@ stage without external VAE.
 <sub><b>Figure 1.</b> <b>(a)</b> the DiT backbone performs <i>latent &rarr; feature &rarr; latent</i>;
 <b>(b)</b> image-space supervision aligns the intermediate feature with the image domain at every timestep;
 <b>(c)</b> at the zero-noise timestep (<code>t=1</code>) an explicit <i>latent &rarr; image &rarr; latent</i> path
-makes the backbone an intrinsic auto-encoder, which in turn enables <i>image &rarr; latent &rarr; image</i>.</sub>
+makes the backbone an auto-encoder, which in turn enables <i>image &rarr; latent &rarr; image</i>.</sub>
 
 ---
 
@@ -195,7 +195,7 @@ Paper: **arXiv:2609.37080** &mdash; https://arxiv.org/abs/2609.37080
 
 ```bibtex
 @inproceedings{ldm_is_ae_2026,
-  title     = {LDM-is-AE: Latent Diffusion Model is an Intrinsic Auto-Encoder for End-to-End Image Generation},
+  title     = {LDM-is-AE: Latent Diffusion Model is an Auto-Encoder for End-to-End Image Generation},
   author    = {Zhang, Zhengqiang and Sun, Lingchen and Wu, Rongyuan and Yi, Qiaosi and
                Kong, Xiangtao and Xiao, Chaodong and Zhang, Lei},
   booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},

@@ -1,1 +1,1 @@
-"""LDM-is-AE: latent diffusion as an intrinsic auto-encoder (official code)."""
+"""LDM-is-AE: latent diffusion as an auto-encoder (official code)."""
