@@ -208,4 +208,4 @@ Paper: **arXiv:2609.37080** &mdash; https://arxiv.org/abs/2609.37080
 <h2 id="license">⚖️ <ins>License</ins></h2>
 
 Code: **Apache License 2.0** -- see `LICENSE`. Model weights and data are released separately and are
-intended for research use. Third-party components are acknowledged in `NOTICE`.
+intended for research use.
