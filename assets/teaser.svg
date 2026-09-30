@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 225" font-family="'Times New Roman', Georgia, serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9.2" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto">
+      <path d="M0.5,1 L9.3,5 L0.5,9 z" fill="#334155"/>
+    </marker>
+    <linearGradient id="gradD" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="gradE" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="52%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#86efac"/>
+    </linearGradient>
+    <clipPath id="photo">
+      <rect x="207" y="83" width="56" height="48" rx="7"/>
+    </clipPath>
+  </defs>
+
+  <rect width="470" height="225" fill="#ffffff"/>
+
+  <rect x="34" y="16" width="402" height="193" rx="17" fill="#fcfdff" stroke="#334155" stroke-width="2.6"/>
+  <rect x="31" y="105" width="8" height="20" fill="#fcfdff"/>
+  <rect x="431" y="105" width="8" height="20" fill="#fcfdff"/>
+  <rect x="48" y="27" width="45" height="21" rx="10.5" fill="#334155"/>
+  <text x="70.5" y="42" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff" font-family="'Segoe UI', system-ui, sans-serif">LDM</text>
+
+  <polygon points="52,94 184,54 184,176 52,136" fill="url(#gradD)" stroke="#2563eb" stroke-width="2.2" stroke-dasharray="7,5" stroke-linejoin="round"/>
+  <text x="118" y="111" text-anchor="middle" font-size="28" font-weight="700" fill="#1e3a8a">DiT-D</text>
+  <text x="118" y="136" text-anchor="middle" font-size="14" font-weight="500" fill="#3b82f6" font-family="'Segoe UI', system-ui, sans-serif">Decoding</text>
+
+  <polygon points="286,54 418,94 418,136 286,176" fill="url(#gradE)" stroke="#ea580c" stroke-width="2.2" stroke-dasharray="7,5" stroke-linejoin="round"/>
+  <text x="352" y="111" text-anchor="middle" font-size="28" font-weight="700" fill="#9a3412">DiT-E</text>
+  <text x="352" y="136" text-anchor="middle" font-size="14" font-weight="500" fill="#c2410c" font-family="'Segoe UI', system-ui, sans-serif">Encoding</text>
+
+  <rect x="203" y="79" width="64" height="74" rx="11" fill="#ffffff" stroke="#16a34a" stroke-width="2.1"/>
+  <g clip-path="url(#photo)">
+    <rect x="207" y="83" width="56" height="48" fill="url(#sky)"/>
+    <circle cx="252" cy="94" r="5.5" fill="#fbbf24"/>
+    <ellipse cx="218" cy="93" rx="8" ry="3.5" fill="#ffffff" opacity="0.9"/>
+    <path d="M207 123 C220 107, 230 114, 238 103 C246 114, 254 108, 263 123 Z" fill="#4ade80"/>
+    <path d="M207 131 C218 117, 228 123, 235 113 C243 123, 253 117, 263 131 Z" fill="#16a34a"/>
+  </g>
+  <text x="235" y="149" text-anchor="middle" font-size="17" font-weight="700" fill="#166534" font-style="italic">x</text>
+
+  <line x1="189" y1="115" x2="196" y2="115" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
+  <line x1="274" y1="115" x2="279" y2="115" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
+
+  <text x="14" y="122" text-anchor="middle" font-size="24" font-weight="700" fill="#0f172a" font-style="italic">z<tspan font-size="13" dy="6">t</tspan></text>
+  <line x1="29" y1="115" x2="47" y2="115" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g transform="translate(456,122)">
+    <text text-anchor="middle" font-size="24" font-weight="700" fill="#0f172a" font-style="italic">z</text>
+  </g>
+  <line x1="423" y1="115" x2="441" y2="115" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="155" y="192" width="160" height="32" rx="16" fill="#ffffff"/>
+  <text x="235" y="215" text-anchor="middle" font-size="22" font-weight="700" fill="#1e293b">LDM is an AE</text>
+</svg>

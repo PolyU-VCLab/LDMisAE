@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -104.4 470 433.8" width="470" height="433.8" role="img" aria-label="Single-stage LDM: latent to image-domain feature to latent">
+  <title>LDM-is-AE (header badge variant)</title>
+  <desc>z_t through DiT-D (decoding) to the image-domain feature x, then through DiT-E (encoding); text-free so it stays legible at header-badge size.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="2.6" markerHeight="2.6" orient="auto">
+      <path d="M0.6,1 L9.4,5 L0.6,9 z" fill="#334155"/>
+    </marker>
+    <linearGradient id="gD" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#eef2ff"/><stop offset="100%" stop-color="#c7d2fe"/>
+    </linearGradient>
+    <linearGradient id="gE" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#fffbeb"/><stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc"/><stop offset="52%" stop-color="#dbeafe"/><stop offset="100%" stop-color="#86efac"/>
+    </linearGradient>
+    <clipPath id="ph"><rect x="205" y="82" width="60" height="52" rx="8"/></clipPath>
+  </defs>
+  <rect x="34" y="16" width="402" height="193" rx="17" fill="none" stroke="#334155" stroke-width="7"/>
+  <polygon points="52,96 168,62 168,168 52,134" fill="url(#gD)" stroke="#4f46e5" stroke-width="7" stroke-linejoin="round"/>
+  <polygon points="302,62 418,96 418,134 302,168" fill="url(#gE)" stroke="#d97706" stroke-width="7" stroke-linejoin="round"/>
+  <rect x="201" y="78" width="68" height="74" rx="12" fill="#ffffff" stroke="#047857" stroke-width="7"/>
+  <g clip-path="url(#ph)">
+    <rect x="205" y="82" width="60" height="52" fill="url(#sky)"/>
+    <circle cx="257" cy="95" r="6" fill="#fbbf24"/>
+    <ellipse cx="216" cy="95" rx="9" ry="4" fill="#ffffff" opacity="0.9"/>
+    <path d="M205 126 C219 110, 230 117, 239 106 C248 117, 256 111, 265 126 Z" fill="#4ade80"/>
+    <path d="M205 136 C217 122, 228 128, 236 118 C245 128, 255 122, 265 136 Z" fill="#16a34a"/>
+  </g>
+  <line x1="172" y1="115" x2="199" y2="115" stroke="#334155" stroke-width="6" marker-end="url(#arrow)"/>
+  <line x1="271" y1="115" x2="300" y2="115" stroke="#334155" stroke-width="6" marker-end="url(#arrow)"/>
+</svg>

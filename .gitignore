@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pth
+output_dir/
+*.log
+.ipynb_checkpoints/
+*.bak.*
+*.bak_*
+
+# released checkpoints and HF download dir (3.9 GB each) -- never commit
+*.ckpt
+weights/
+.cache/
+
+.trash/

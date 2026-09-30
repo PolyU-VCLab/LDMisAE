@@ -1,0 +1,14 @@
+LDM-is-AE
+Copyright 2026 The Hong Kong Polytechnic University and OPPO Research Institute.
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Third-party components used by this repository -- each is governed by its own license;
+please consult the corresponding upstream project:
+
+  * LPIPS perceptual loss (VGG) and the taming-transformers utilities used to load `vgg.pth`.
+  * torch-fidelity -- Inception-V3 features for FID and Inception Score.
+  * The DiT and SiT backbones, on which `ldm_is_ae/backbone/` is based.
+  * timm, einops, transformers (Qwen3 text encoder) and BLIP3o for the text-to-image branch.
+
+Model weights released with this project are provided for research use.

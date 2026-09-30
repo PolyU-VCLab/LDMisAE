@@ -1,0 +1,19 @@
+# core
+torch
+torchvision
+numpy
+scipy
+einops
+timm
+# data / io
+pillow
+opencv-python
+requests
+tqdm
+dill
+# T2I text encoder
+transformers
+# logging (ldm_is_ae/utils/train_log.py)
+loguru
+# evaluation: FID / IS in the ADM caliber (ldm_is_ae/eval/fid_is.py)
+torch-fidelity
